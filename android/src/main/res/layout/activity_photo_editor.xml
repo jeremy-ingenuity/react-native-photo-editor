@@ -301,7 +301,7 @@
                 app:realtimeBlurRadius="10dp"
                 app:realtimeOverlayColor="#33ffffff" />
 
-            <com.viewpagerindicator.CirclePageIndicator
+            <!-- <com.viewpagerindicator.CirclePageIndicator
                 android:id="@+id/image_emoji_indicator"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -309,7 +309,7 @@
                 android:layout_gravity="center_horizontal"
                 android:padding="12dp"
                 app:fillColor="#999999"
-                app:pageColor="#e7e7e7" />
+                app:pageColor="#e7e7e7" /> -->
 
             <androidx.viewpager.widget.ViewPager
                 android:id="@+id/image_emoji_view_pager"

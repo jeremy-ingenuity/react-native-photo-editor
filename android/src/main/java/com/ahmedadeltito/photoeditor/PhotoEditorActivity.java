@@ -50,7 +50,7 @@ import com.ahmedadeltito.photoeditorsdk.BrushDrawingView;
 import com.ahmedadeltito.photoeditorsdk.OnPhotoEditorSDKListener;
 import com.ahmedadeltito.photoeditorsdk.PhotoEditorSDK;
 import com.ahmedadeltito.photoeditorsdk.ViewType;
-import com.viewpagerindicator.PageIndicator;
+// import com.viewpagerindicator.PageIndicator;
 
 import java.io.BufferedOutputStream;
 import java.io.File;
@@ -162,7 +162,7 @@ public class PhotoEditorActivity extends AppCompatActivity implements View.OnCli
         bottomShadowRelativeLayout = (RelativeLayout) findViewById(R.id.bottom_parent_rl);
 
         ViewPager pager = (ViewPager) findViewById(R.id.image_emoji_view_pager);
-        PageIndicator indicator = (PageIndicator) findViewById(R.id.image_emoji_indicator);
+        // PageIndicator indicator = (PageIndicator) findViewById(R.id.image_emoji_indicator);
 
         photoEditImageView.setImageBitmap(rotatedBitmap);
 
@@ -190,13 +190,13 @@ public class PhotoEditorActivity extends AppCompatActivity implements View.OnCli
 
         fragmentsList.add(imageFragment);
 
-        EmojiFragment emojiFragment = new EmojiFragment();
-        fragmentsList.add(emojiFragment);
+        // EmojiFragment emojiFragment = new EmojiFragment();
+        // fragmentsList.add(emojiFragment);
 
         PreviewSlidePagerAdapter adapter = new PreviewSlidePagerAdapter(getSupportFragmentManager(), fragmentsList);
         pager.setAdapter(adapter);
         pager.setOffscreenPageLimit(5);
-        indicator.setViewPager(pager);
+        // indicator.setViewPager(pager);
 
         photoEditorSDK = new PhotoEditorSDK.PhotoEditorSDKBuilder(PhotoEditorActivity.this)
                 .parentView(parentImageRelativeLayout) // add parent image view
@@ -691,7 +691,7 @@ public class PhotoEditorActivity extends AppCompatActivity implements View.OnCli
 
         @Override
         public int getCount() {
-            return 2;
+            return 1;
         }
     }
 
